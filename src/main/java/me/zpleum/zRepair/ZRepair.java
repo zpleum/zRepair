@@ -241,6 +241,10 @@ public class ZRepair extends JavaPlugin implements CommandExecutor {
         } else {
             sendMessage(sender, config.getString("messages.no-items-repaired",
                     "&cNo items were repaired!"));
+            sendMessage(target, config.getString("messages.items-repaired-by-other",
+                            "&a%player% ได้ซ่อมแซมไอเทมของคุณจำนวน %count% ชิ้นเรียบร้อยแล้ว!")
+                    .replace("%count%", String.valueOf(repairedCount))
+                    .replace("%player%", sender.getName()));
         }
 
         return true;
