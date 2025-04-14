@@ -1,0 +1,22 @@
+# SYSTEM BY PLEUM SUD XAO XD | VERSION 1.0.2 | HTTPS://WIRAPHAT.ONRENDER.COM/
+
+messages:
+  prefix: "&8( &eซ่อมของ &8) "
+  usage: "&cวิธีใช้: /zrepair one (ผู้เล่น) | /zrepair all (ผู้เล่น) | /zrepair reload"
+  no-permission: "&cคุณไม่มีสิทธิ์ในการใช้คำสั่งนี้!"
+  unknown-command: "&cไม่พบคำสั่งนี้ ใช้ /zrepair เพื่อดูวิธีใช้"
+  player-not-found: "&cไม่พบผู้เล่น!"
+  console-specify-player: "&cคอนโซลต้องระบุชื่อผู้เล่น!"
+  no-item-in-hand: "&cไม่มีไอเทมในมือของผู้เล่น!"
+  durability-full: "&eไอเทมในมือของคุณไม่ถูกซ่อมเนื่องจากค่าความคงทนเต็มแล้ว!"
+  repaired-own-item: "&aคุณได้ซ่อมแซมไอเทมของคุณเรียบร้อยแล้ว!"
+  repaired-other-item: "&aคุณได้ซ่อมแซมไอเทมของ %player% เรียบร้อยแล้ว!"
+  item-repaired-by-other: "&aไอเทมของคุณถูกซ่อมแซมโดย %sender%!"
+  repaired-own-items: "&aคุณได้ซ่อมแซมไอเทมจำนวน %count% ชิ้นเรียบร้อยแล้ว!"
+  repaired-other-items: "&aคุณได้ซ่อมแซมไอเทมจำนวน %count% ชิ้นให้กับ %player% เรียบร้อยแล้ว!"
+  items-repaired-by-other: "&aไอเทมจำนวน %count% ชิ้นของคุณถูกซ่อมแซมโดย %sender%!"
+  no-items-repaired: "&cไม่มีไอเทมที่ถูกซ่อมแซม!"
+  cannot-repair: "&cไอเทมนี้ไม่สามารถซ่อมแซมได้!"
+  config-reloaded: "&aโหลดไฟล์การตั้งค่าใหม่เรียบร้อยแล้ว!"
+
+# SYSTEM BY PLEUM SUD XAO XD | VERSION 1.0.2 | HTTPS://WIRAPHAT.ONRENDER.COM/

@@ -1,0 +1,30 @@
+name: zRepair
+version: '1.0.2'
+author: zPleum
+description: Made On Earth By Human, By zPleum, THIS IS MY COPYRIGHT
+website: https://wiraphat.onrender.com/
+main: me.zpleum.zRepair.ZRepair
+api-version: '1.21'
+
+commands:
+  zrepair:
+    description: Main command for the ZRepair plugin
+    usage: /zrepair (one|all|reload) (player)
+    aliases: [zr]
+
+permissions:
+  zrepair.one:
+    description: Permission to repair one item in hand
+    default: op
+  zrepair.all:
+    description: Permission to repair all items in inventory
+    default: op
+  zrepair.admin:
+    description: Permission to reload the plugin
+    default: op
+  zrepair.one.others:
+    description: Permission to repair other players' items in hand
+    default: op
+  zrepair.all.others:
+    description: Permission to repair other players' inventory items
+    default: op
