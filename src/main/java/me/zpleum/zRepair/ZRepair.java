@@ -153,6 +153,10 @@ public class ZRepair extends JavaPlugin implements CommandExecutor {
         if (handItem == null || handItem.getType().isAir()) {
             sendMessage(sender, config.getString("messages.no-item-in-hand",
                     "&cThere is no item in the player's hand!"));
+            if (!sender.equals(target)) {
+                sendMessage(target, config.getString("messages.no-item-in-hand",
+                        "&cไม่มีไอเทมในมือของคุณ!"));
+            }
             return true;
         }
 
@@ -160,6 +164,10 @@ public class ZRepair extends JavaPlugin implements CommandExecutor {
         if (isDurabilityFull(handItem)) {
             sendMessage(sender, config.getString("messages.durability-full",
                     "&eมีไอเทมบางชิ้นที่ไม่ถูกซ่อมเนื่องจากค่าความคงทนเต็มแล้ว!"));
+            if (!sender.equals(target)) {
+                sendMessage(target, config.getString("messages.durability-full",
+                        "&eไอเทมในมือของคุณไม่ถูกซ่อมเนื่องจากค่าความคงทนเต็มแล้ว!"));
+            }
             return true;
         }
 
