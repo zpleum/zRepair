@@ -174,7 +174,8 @@ public class ZRepair extends JavaPlugin implements CommandExecutor {
                 sendMessage(sender, config.getString("messages.repaired-other-item",
                         "&aYou repaired " + target.getName() + "'s item successfully!"));
                 sendMessage(target, config.getString("messages.item-repaired-by-other",
-                        "&aYour item was repaired by " + sender.getName() + "!"));
+                                "&a%player% ได้ซ่อมแซมไอเทมในมือของคุณเรียบร้อยแล้ว!")
+                        .replace("%player%", sender.getName()));
             }
         } else {
             sendMessage(sender, config.getString("messages.cannot-repair",
@@ -221,9 +222,13 @@ public class ZRepair extends JavaPlugin implements CommandExecutor {
                         "&aคุณได้ซ่อมแซมไอเทมจำนวน %count% ชิ้นเรียบร้อยแล้ว!").replace("%count%", String.valueOf(repairedCount)));
             } else {
                 sendMessage(sender, config.getString("messages.repaired-other-items",
-                        "&a%count% of your items were repaired by " + sender.getName() + "!").replace("%count%", String.valueOf(repairedCount)));
+                                "&aคุณได้ซ่อมแซมไอเทมของ %player% จำนวน %count% ชิ้นเรียบร้อยแล้ว!")
+                        .replace("%count%", String.valueOf(repairedCount))
+                        .replace("%player%", target.getName()));
                 sendMessage(target, config.getString("messages.items-repaired-by-other",
-                        "&a" + repairedCount + " of your items were repaired by " + sender.getName() + "!").replace("%count%", String.valueOf(repairedCount)));
+                                "&a%player% ได้ซ่อมแซมไอเทมของคุณจำนวน %count% ชิ้นเรียบร้อยแล้ว!")
+                        .replace("%count%", String.valueOf(repairedCount))
+                        .replace("%player%", sender.getName()));
             }
         } else {
             sendMessage(sender, config.getString("messages.no-items-repaired",
