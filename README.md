@@ -56,7 +56,7 @@
 การตั้งค่าเริ่มต้นจะถูกสร้างขึ้นเมื่อปลั๊กอินทำงานครั้งแรก:
 
 ```yaml
-# SYSTEM BY PLEUM SUD XAO XD | VERSION 1.0.2 | HTTPS://WIRAPHAT.ONRENDER.COM/
+# VERSION 1.0.2
 
 messages:
   prefix: "&8( &eซ่อมของ &8) "
@@ -77,7 +77,7 @@ messages:
   cannot-repair: "&cไอเทมนี้ไม่สามารถซ่อมแซมได้!"
   config-reloaded: "&aโหลดไฟล์การตั้งค่าใหม่เรียบร้อยแล้ว!"
 
-# SYSTEM BY PLEUM SUD XAO XD | VERSION 1.0.2 | HTTPS://WIRAPHAT.ONRENDER.COM/
+# © 2025 zPleum. Licensed under MIT License. | https://zpleum.site/
 ```
 
 คุณสามารถปรับแต่งข้อความทั้งหมดได้โดยแก้ไขไฟล์ config.yml และโหลดปลั๊กอินใหม่
